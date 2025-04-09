@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+    body {
+        background-image: url('../imagens-ias/imagem-fundo-mobile.png'); /* nova imagem para celulares */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    main::after {
+        width: 100vw;
+        display: none; 
+    }
+
+    main .personagem .imagem{
+        height: 85%;
+        object-position: center;
+    }
+
+    .conteudo {
+        justify-content: flex-end;
+        left: 0;
+        top: -20%;
+        max-width: 100vw;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4)
+    }
+
+    
+    .conteudo .descricao,
+    .especie,
+    .habilidades,
+    .evolucao {
+        font-size: 15px;
+        line-height: 20px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .conteudo .descricao {
+        max-width: 500px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .botoes .botao {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .botoes .botao img {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    main .personagem .imagem {
+        height: auto;
+    }
+
+    .conteudo {
+        top: -20%;
+        padding: 10px;
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+    .conteudo .descricao,
+    .especie,
+    .habilidades,
+    .evolucao {
+        font-size: 13px;
+        line-height: 17px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .botoes {
+        padding: 8px;
+        gap: 10px;  
+    }
+
+    .botoes .botao {
+        width: 30px;
+        height: 30px;
+    }
+
+    .botoes .botao img {
+        max-width: 30px;
+    }
+
+    
+}
